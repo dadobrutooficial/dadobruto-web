@@ -1,9 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head><meta charset="UTF-8"><title>DadoBruto</title></head>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DadoBruto — Tecnologia e Carreira</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Arial, sans-serif; max-width: 760px; margin: 0 auto; padding: 40px 20px; color: #1a1a1a; line-height: 1.6; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  .subtitle { color: #666; margin-bottom: 32px; }
+  h2 { font-size: 20px; margin-top: 40px; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+  .channels { display: flex; gap: 16px; margin: 20px 0; flex-wrap: wrap; }
+  .channel-link { display: inline-block; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: 600; }
+  .yt { background: #ff0000; color: #fff; }
+  .tt { background: #000; color: #fff; }
+  nav { margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; }
+  nav a { color: #555; margin-right: 16px; text-decoration: none; }
+  nav a:hover { text-decoration: underline; }
+  footer { margin-top: 40px; color: #999; font-size: 13px; }
+</style>
+</head>
 <body>
+
 <h1>DadoBruto</h1>
-<p>Canal de tecnologia e informação.</p>
-<p><a href="/terms">Termos de Uso</a> | <a href="/privacy">Política de Privacidade</a></p>
+<p class="subtitle">Canal de tecnologia, carreira em programação e o impacto da inteligência artificial no mercado de trabalho.</p>
+
+<p>
+  O DadoBruto publica vídeos curtos (Shorts) sobre tecnologia, mercado de trabalho de tecnologia,
+  linguagens de programação, infraestrutura e o dia a dia de quem trabalha na área — com foco
+  especial em como a inteligência artificial vem mudando essa realidade. O conteúdo é uma mistura
+  de vídeos autorais e cortes/comentários de conteúdo relevante de outros canais de tecnologia.
+</p>
+
+<div class="channels">
+  <a class="channel-link yt" href="https://youtube.com/@DadoBruto" target="_blank">Assistir no YouTube</a>
+  <a class="channel-link tt" href="https://www.tiktok.com/@dadobruto" target="_blank">Seguir no TikTok</a>
+</div>
+
+<h2>Sobre a automação de publicação (app DadoBruto)</h2>
+<p>
+  O DadoBruto é administrado por um único criador, que desenvolveu uma ferramenta própria de
+  automação para apoiar a produção e publicação do conteúdo do canal. Essa ferramenta é a
+  aplicação registrada como <strong>DadoBruto</strong> nas plataformas de desenvolvedor do TikTok e do
+  YouTube — de uso pessoal, exclusivo do próprio criador, não distribuída nem usada por terceiros.
+</p>
+<p>
+  No TikTok, a aplicação usa a <strong>Content Posting API</strong>, com os seguintes escopos:
+</p>
+<ul>
+  <li>
+    <strong>user.info.basic</strong> — usado apenas para identificar a conta conectada (nome e
+    foto de perfil), confirmando que a publicação será feita na conta correta antes de prosseguir.
+  </li>
+  <li>
+    <strong>video.upload</strong> e <strong>video.publish</strong> — usados para enviar um vídeo já
+    pronto (editado localmente pelo criador) e publicá-lo na própria conta TikTok do criador,
+    substituindo o processo manual de abrir o app e fazer upload a cada vídeo.
+  </li>
+</ul>
+<p>
+  Antes de cada publicação, a aplicação consulta as configurações reais da conta (via
+  <code>creator_info</code>) e mostra ao criador as opções disponíveis (nível de privacidade,
+  permissão de duet/comentário/stitch) para confirmação manual — nenhum vídeo é publicado sem essa
+  revisão. Não há coleta, armazenamento ou compartilhamento de dados de terceiros: a aplicação
+  interage apenas com a conta do próprio criador.
+</p>
+
+<nav>
+  <a href="/privacy">Política de Privacidade</a>
+  <a href="/terms">Termos de Uso</a>
+</nav>
+
+<footer>&copy; 2026 DadoBruto</footer>
+
 </body>
 </html>
