@@ -17,13 +17,20 @@
 <body>
 
 <h1>Política de Privacidade</h1>
-<p class="updated">Última atualização: 24 de setembro de 2026</p>
+<p class="updated">Última atualização: 7 de outubro de 2026</p>
 
 <p>
   Esta política descreve como a aplicação <strong>DadoBruto</strong> (registrada nas plataformas de
   desenvolvedor do TikTok e do YouTube) trata dados ao ser usada. A aplicação é de uso pessoal e
   exclusivo do criador do canal DadoBruto, para automatizar a publicação do próprio conteúdo — não é
   distribuída, revendida ou disponibilizada para uso por terceiros.
+</p>
+<p>
+  A aplicação usa os <strong>Serviços de API do YouTube</strong> (YouTube Data API v3 e YouTube
+  Analytics API). Ao usar a aplicação, você concorda com os
+  <a href="https://www.youtube.com/t/terms">Termos de Serviço do YouTube</a>, e os dados obtidos por
+  meio dessas APIs também estão sujeitos à
+  <a href="https://policies.google.com/privacy">Política de Privacidade do Google</a>.
 </p>
 
 <h2>1. Quem opera esta aplicação</h2>
@@ -40,7 +47,13 @@
     Configurações de publicação da conta relevantes para postar um vídeo (nível de privacidade
     disponível, permissões de duet/comentário/stitch no caso do TikTok);
   </li>
-  <li>Um token de acesso OAuth, usado exclusivamente para autorizar o envio de vídeos.</li>
+  <li>Um token de acesso OAuth, usado exclusivamente para autorizar as operações abaixo na conta conectada;</li>
+  <li>
+    No YouTube: os metadados dos vídeos do próprio canal (título, descrição, tags, status de
+    privacidade) e as métricas agregadas do próprio canal fornecidas pela YouTube Analytics API
+    (visualizações, tempo de exibição, retenção, inscritos ganhos), usadas apenas para o operador
+    acompanhar o desempenho do canal.
+  </li>
 </ul>
 <p>
   A aplicação <strong>não</strong> acessa, lê ou processa mensagens privadas, contatos, histórico de
@@ -51,9 +64,11 @@
 <h2>3. Como os dados são usados</h2>
 <p>
   Os dados listados acima são usados unicamente para: (a) confirmar qual conta está conectada antes
-  de publicar; (b) enviar o arquivo de vídeo já pronto para a plataforma; (c) aplicar as
-  configurações de publicação (privacidade, duet, comentário, stitch) escolhidas com base nas opções
-  reais permitidas pela conta.
+  de publicar; (b) enviar o arquivo de vídeo já pronto para a plataforma, somente depois de revisado
+  e aprovado manualmente pelo operador; (c) aplicar as configurações de publicação (privacidade,
+  duet, comentário, stitch) escolhidas com base nas opções reais permitidas pela conta; (d) corrigir
+  título e descrição de vídeos do próprio canal; (e) exibir ao operador, em um painel privado, as
+  métricas do próprio canal.
 </p>
 
 <h2>4. Compartilhamento com terceiros</h2>
@@ -72,9 +87,11 @@
 
 <h2>6. Retenção de dados</h2>
 <p>
-  O token de acesso é mantido apenas enquanto a integração estiver ativa. O operador pode revogar o
-  acesso a qualquer momento diretamente nas configurações de segurança da própria conta TikTok ou
-  YouTube, o que invalida o token imediatamente.
+  O token de acesso é mantido apenas enquanto a integração estiver ativa. As métricas do YouTube são
+  consultadas sob demanda, exibidas no painel e não são armazenadas. O acesso pode ser revogado a
+  qualquer momento nas configurações de segurança da conta TikTok ou, para o YouTube, na página de
+  <a href="https://security.google.com/settings/security/permissions">permissões de apps da conta
+  Google</a>, o que invalida o token imediatamente.
 </p>
 
 <h2>7. Seus direitos</h2>
